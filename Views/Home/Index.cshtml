@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Korelskiy.TheWitcherProject.Models.WitcherItem>
+
+@{
+    ViewData["Title"] = "Index";
+
+}
+
+
+<div class="row justify-content-center">
+    <div class="col-10 p-2">
+        @foreach (var item in Model)
+        {
+            string path = item.ImagePath;
+            <div class="card m-2">
+                <div class="card-header text-center">
+                    @item.Title
+                </div>
+                <div class="card-body text-center">
+                    <img class="witcherItemImg" src="~/img/@path" />
+                    <div>
+                        <a href="#" class="btn btn-danger">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    
+
+</div>
+
+@*<div class="row text-center">
+    <div class="col">
+        @foreach (var item in Model)
+        {
+            <p>@item.Title</p>
+            @if (item.Title == "Гуль")
+            {
+                <img class="witcherItemImg" src="~/img/gool.png" />
+            }
+            <hr />
+        }
+    </div>
+</div>*@
