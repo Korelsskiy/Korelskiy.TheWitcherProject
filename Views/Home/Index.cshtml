@@ -7,16 +7,16 @@
 
 
 <div class="row justify-content-center">
-    <div class="col-10 p-2">
+    <div class="col-8 p-2">
         @foreach (var item in Model)
         {
             string path = item.ImagePath;
             <div class="card m-2">
                 <div class="card-header text-center">
-                    @item.Title
+                   @item.Title
                 </div>
                 <div class="card-body text-center">
-                    <img class="witcherItemImg" src="~/img/@path" />
+                    <img class="img-thumbnail" src="~/img/@path" />
                     <div>
                         <a href="#" class="btn btn-danger">Подробнее</a>
                     </div>

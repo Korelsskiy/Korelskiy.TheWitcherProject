@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Korelskiy.TheWitcherProject.Models
 {
-    public class WitcherItem
+    public abstract class WitcherItem
     {
         public int Id { get; set; }
         [Required]

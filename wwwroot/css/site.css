@@ -80,8 +80,8 @@ body {
 }
 
 .witcherItemImg{
-    max-height:300px;
-    min-width: 500px;
+    min-height: 100px;
+    min-width: 200px;
 }
 .themeItemImg {
     height: 500px;

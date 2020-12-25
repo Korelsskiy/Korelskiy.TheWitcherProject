@@ -15,6 +15,8 @@ namespace Korelskiy.TheWitcherProject.Infrastructure
 
         }
 
-        public DbSet<WitcherItem> ItemList { get; set; }
+        public DbSet<Beast> BeastsList { get; set; }
+
+        public DbSet<Person> PersonsList { get; set; }
     }
 }
